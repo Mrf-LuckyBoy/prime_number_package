@@ -30,6 +30,9 @@ function isPrime(num) {
   if (num == 1 || num == 0) {
     return { message: ` ${num} is not a prime number`, isPrime: false };
   }
+  if (num < 0) {
+    return { message: `prime number can't be minus` };
+  }
   for (let i = 2; i < num; i++) {
     if (num % i == 0) {
       return { message: ` ${num} is not a prime number`, isPrime: false };
@@ -40,6 +43,14 @@ function isPrime(num) {
 function findPrimeInLength({ start, end }) {
   let tempstart = start;
   let res = [];
+  if (start < 0 || end < 0) {
+    return { message: `prime number can't be minus` };
+  }
+  if (start > end) {
+    let temp = start;
+    start = end;
+    end = temp;
+  }
   for (start; start <= end; start++) {
     if (isPrime(start).isPrime) {
       res.push(start);
