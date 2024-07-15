@@ -1,6 +1,6 @@
 {
   "name": "better-prime-number",
-  "version": "0.0.4",
+  "version": "0.1.4",
   "description": "this package is a package to check prime number.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
