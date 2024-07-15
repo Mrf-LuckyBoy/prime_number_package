@@ -1,0 +1,29 @@
+{
+  "name": "better-prime-number",
+  "version": "0.0.4",
+  "description": "this package is a package to check prime number.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/Mrf-LuckyBoy/prime_number_package.git"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "array",
+    "count",
+    "filter",
+    "math",
+    "numberic",
+    "prime",
+    "string"
+  ],
+  "author": "atsawa",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3"
+  }
+}
