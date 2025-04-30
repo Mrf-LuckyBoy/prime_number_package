@@ -1,5 +1,5 @@
 import { FindInLength } from "./types";
-
+// test commit
 function isPrime(num: number){
     if(num==1 || num==0){
         return {message: ` ${num} is not a prime number`, isPrime: false};
